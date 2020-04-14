@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>calculadora</title>
-    </head>
-    <body>
-            <div>
-                <label for="N1">insira o primeiro numero</label>
-                <input type="text" id="N1"/>
-            </div>
-            <div>
-                <label for="N2">insira o segundo numero</label>
-                <input type="text" id="N2"/>
-            </div>
-            
-            <div>
-            <button onclick="diminuir()">diminuir</button>
-            <button onclick="somar()">somar</button>
-            <button onclick="dividir()">dividir</button>
-            <button onclick="multiplicar()">multiplicar</button>
-            </div>
 
-            <div>
-                <label for="result">resultado</label>
-                <input type="text" id="resultado"/>
-            </div>
-        
+<head>
+    <meta charset="UTF-8">
+    <title>calculadora</title>
+</head>
+
+<body>
+    <div>
+        <label for="N1">insira o primeiro numero</label>
+        <input type="text" id="N1" />
+    </div>
+
+    <div>
+        <label for="N2"> insira o segundo numero</label>
+        <input type="text" id="N2" />
+    </div>
+
+    <div>
+        <button onclick="opera='-'">diminuir</button>
+        <button onclick="opera='+'">somar</button>
+        <button onclick="opera='/'">dividir</button>
+        <button onclick="opera='*'">multiplicar</button>
+        <br>
+        <button onclick="resultado()">=</button>
+    </div>
+
+    <div>
+        <label for="result">resultado</label>
+        <input type="text" id="resultado" />
+    </div>
 
     <script>
-
-        function somar() {
+        
+        var opera;
+        function resultado() {
             var n1 = +document.getElementById("N1").value;
             var n2 = +document.getElementById("N2").value;
             var result = document.getElementById("resultado");
-            result.value =  n1 + n2;
-            
-            
+            if (opera == "+") {
+                result.value = n1 + n2;
+            } else if (opera == "-") {
+                result.value = n1 - n2;
+            } else if (opera == "/") {
+                result.value = n1 / n2;
+            } else if (opera == "*") {
+                result.value = n1 * n2;
+            }
         }
-
-        function diminuir() {
-            var n1 = +document.getElementById("N1").value;
-            var n2 = +document.getElementById("N2").value;
-            var result = document.getElementById("resultado");
-            result.value =  n1 - n2;
-        }
-
-        function dividir() {
-            var n1 = +document.getElementById("N1").value;
-            var n2 = +document.getElementById("N2").value;
-            var result = document.getElementById("resultado");
-            result.value =  n1 / n2;
-        }
-
-        function multiplicar() {
-            var n1 = +document.getElementById("N1").value;
-            var n2 = +document.getElementById("N2").value;
-            var result = document.getElementById("resultado");
-            result.value =  n1 * n2;
-        }
-
     </script>
-    </body>
+
+</body>
+
 </html>
