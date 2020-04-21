@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #101013;
+    font-family: sans-serif;
+}
+.calcula{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 290px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #34393f;
+}
+p{
+    transform: translateY(-10px);
+    font-size: 25px;
+    margin: 0;
+    padding: 0 0 26px;
+    color: #ffffff;
+    text-align: center;
+}
+.calcula input[type="text"]{
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #8b8b8b;
+    background: transparent;
+    outline: none;
+}
+.calcula input[type="text"]:focus{
+    color: #8b8b8b;
+}
+.calcula input[type="text"]:enabled{
+    color: #8b8b8b;
+}
+.calcula input[type="submit"]{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #4a7db6;
+    color: #ffffff;
+    border: none;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.calcula input[type="submit"]:hover{
+    
+    background-color: #74a3d8;
+    box-shadow: 0 0 50px #74a3d8 ;
+}
+::placeholder{
+    color: #8b8b8b;
+}

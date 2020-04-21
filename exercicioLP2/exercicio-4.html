@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gerenciador de atividade</title>
+    <link rel="stylesheet" href="css/exercicio-4.css">
+</head>
+
+<body>
+    <div class="conta" id="conta">
+        <p>
+            Gerenciar atividades
+        </p>
+    </div>
+    <div class="list" id="area">
+        <li style="opacity: 0;"></li>
+    </div>
+    <div id="botao" class="botao">
+        <input type="text" placeholder="digite algo" id="txt">
+     <input type="submit" value="acrescentar" onclick="apresent()">
+    </div>
+    <script>
+        var texto = document.getElementById("botao");
+        var sombra= '';
+        for (let i = 0; i < 465; i++) {
+            sombra +=(sombra? ',':'')+ i*1+'px ' + i*1+'px 0px #000000'; 
+        }
+        texto.style.boxShadow = sombra;
+        function apresent() {
+            var limpa = document.getElementById("txt");
+            var texto = document.getElementById("txt").value;
+            var linha = document.createElement("li");
+            var auxtexto = document.createTextNode(texto);
+            linha.appendChild(auxtexto);
+            document.getElementById("area").appendChild(linha);
+            limpa.value = null;
+        }
+    </script>
+</body>
+
+</html>

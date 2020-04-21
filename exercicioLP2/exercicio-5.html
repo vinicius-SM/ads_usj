@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/exercicio-5.css">
+</head>
+
+<body>
+    <div id="tela_error" class="tela_error" style="visibility: hidden;">.</div>
+    <div id="tela_acerto" class="tela_acerto" style="visibility: hidden;">.</div>
+    <div class="conta" id="conta">
+        <p>
+            criar uma conta
+        </p>
+    </div>
+    <form action="#">
+        <div class="campos">
+            <div id="error" class="error" style="visibility: hidden;">
+                <p class="tittle_error"> erro ao cadastrar</p>
+            </div>
+            <div id="acerto" class="acerto" style="visibility: hidden;">
+                <p class="tittle_acerto"> sucesso ao cadastrar</p>
+            </div>
+            <input type="text" placeholder="digite seu nome" id="nome" pattern="[A-Za-z].{1,}" title="digite seu nome"
+                required>
+            <br>
+            <input type="number" placeholder="digite sua idade" id="idade" title="digite sua idade" required>
+            <br>
+            <input type="email" placeholder="digite seu email" id="email" title="digite seu email" required>
+            <br>
+            <input type="password" placeholder="digite sua senha" id="pswrd" title="digite sua senha" required>
+            <br>
+            <input type="button" value="cadastrar" onclick="cadastro()">
+        </div>
+    </form>
+    <script>
+        function erro() {
+            var acerto = document.getElementById("acerto").style = "visibility: hidden;";
+            var error = document.getElementById("error").style = "visibility: visible;";
+            
+            var tela_acerto = document.getElementById("tela_acerto").style = "visibility: hidden;";
+            var tela_error = document.getElementById("tela_error").style = "visibility: visible;";
+        } function acerto() {
+            var acerto = document.getElementById("acerto").style = "visibility: visible;";
+            var error = document.getElementById("error").style = "visibility: hidden;";
+
+            var tela_acerto = document.getElementById("tela_acerto").style = "visibility:visible;";
+            var tela_error = document.getElementById("tela_error").style = "visibility:  hidden;";
+        }
+        function cadastro() {
+            /**/
+            //validaçao nome
+            var name = document.getElementById("nome").value;
+            if (name.length == 0) {
+                var bord = document.getElementById("nome");
+                bord.style.borderColor = "#b41919";
+                return erro();
+            } name = name.toLowerCase();
+            for (let n = 0; n < name.length; n++) {
+                if (name[1, n] >= "0" && name[1, n] <= "9" || name[1, n] == null) {
+                    console.log(name[1, n]);
+                    var bord = document.getElementById("nome");
+                    bord.style.borderColor = "#b41919";
+                    return erro();
+                }
+            }
+            var bord = document.getElementById("nome");
+            bord.style.borderColor = "#42b400";
+            valiadaidade();
+
+        }
+        function valiadaidade() {
+            //validaçao idade
+            var yearold = +document.getElementById("idade").value;
+            if (yearold != "") {
+                for (let y = 0; y < yearold.length; y++) {
+                    if (yearold[1, y] >= ! "0" && yearold[1, y] <= ! "9") {
+                        console.log(yearold);
+                        var bord = document.getElementById("idade");
+                        bord.style.borderColor = "#b41919";
+                        return erro();
+                    }
+                }
+                var bord = document.getElementById("idade");
+                bord.style.borderColor = "#42b400";
+                return valiadaemail();
+            }
+            console.log(yearold);
+            var bord = document.getElementById("idade");
+            bord.style.borderColor = "#b41919";
+            return erro();
+        }
+        function valiadaemail() {
+            //validaçao email
+            var mail = document.getElementById("email").value;
+            for (let e = 0; e < mail.length; e++) {
+                if (mail[1, e] == "@") {
+                    var bord = document.getElementById("email");
+                    bord.style.borderColor = "#42b400";
+                    return valiadasenha();
+                }
+            }
+            console.log(mail);
+            var bord = document.getElementById("email");
+            bord.style.borderColor = "#b41919";
+            return erro();
+        }
+        function valiadasenha() {
+            //validaçao senha
+            var psswrd = document.getElementById("pswrd").value;
+            if (psswrd.length < 8) {
+                console.log(psswrd);
+                var bord = document.getElementById("pswrd");
+                bord.style.borderColor = "#b41919";
+                return erro();
+            }
+            var bord = document.getElementById("pswrd");
+            bord.style.borderColor = "#42b400";
+            return acerto();
+        }
+
+
+    </script>
+
+</body>
+
+</html>

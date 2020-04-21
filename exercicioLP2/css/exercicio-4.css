@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #101013;
+    font-family: sans-serif;
+}
+.conta{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: #34393f;
+    width: 600px;
+    height: 120px;
+    left: 50%;
+    top: -3%;
+    transform: translate(-50%);
+    border-radius: 25px;
+    overflow: hidden;
+}
+p{
+    position: absolute;
+    font-size: 40px;
+    color: #8b8b8b;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 600px;
+    left: 50%;
+    top: 3%;
+    transform: translate(-50%);
+}
+.list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 290px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #34393f;
+    overflow: hidden;
+}
+li{
+    transform: translate(-1%,320%);
+    padding: 0px;
+    border-bottom: 2px #8b8b8b;
+    text-decoration: none;
+    color: #8b8b8b;
+    text-align: center;
+}
+.botao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 290px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #34393f;
+    background: transparent;
+    box-shadow: 1px 1px 0px #000000;
+}
+.botao input[type="text"]{
+    margin: 0px;
+    padding: 5px 5px;
+    border: 2px solid #8b8b8b;
+    position: absolute;
+    background: transparent;
+    color: #8b8b8b;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+}
+.botao input[type="submit"]{
+    margin: 0px;
+    padding: 5px 5px;
+    border: 2px solid #8b8b8b;
+    top: 80px;
+    position: absolute;
+    width: 183px;
+    background: transparent;
+    color: #8b8b8b;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+}
+.botao input[type="submit"]:hover{
+    border: 2px solid #74a3d8;
+    background-color: #74a3d8;
+    box-shadow: 0 0 50px #74a3d8 ;
+    color: #34393f;
+}

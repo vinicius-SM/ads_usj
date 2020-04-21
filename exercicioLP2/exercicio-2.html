@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-2</title>
+    <link type="text/css" rel="stylesheet" href="css/exercicio-2.css" />
+</head>
+
+<body>
+
+    <div class="calcula">
+        <p>
+            calculadora
+        </p>
+            <input type="text" placeholder="digite um numero" id="N1">
+            <br>
+            <input type="text" placeholder="digite um numero" id="N2">
+            <br>
+            <input type="text" placeholder="digite um numero" id="N3">
+            <br>
+            <input type="submit" value="CALCULAR" id="calclr" onclick=resultado()>
+            <br>
+            <input type="text" placeholder="resultado" id="resultado">
+    </div>
+
+    <script>
+        function resultado() {
+            //variaveis
+            var n1 = +document.getElementById("N1").value;
+            var n2 = +document.getElementById("N2").value;
+            var n3 = +document.getElementById("N3").value;
+            var rslt = document.getElementById("resultado");
+            //calculo e resultado
+            rslt.value = (n1 + n2 + n3) / 3;
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-3</title>
+    <link type="text/css" rel="stylesheet" href="css/exercicio-3.css">
+</head>
+
+<body>
+    <div class="gera">
+        <p>
+            GERADOR DE NUMEROS
+        </p>
+    </div>
+    <div class="caixas">
+        <input type="text" placeholder="00" id="N1">
+        <input type="text" placeholder="00" id="N2">
+        <input type="text" placeholder="00" id="N3">
+        <input type="text" placeholder="00" id="N4">
+        <input type="text" placeholder="00" id="N5">
+        <input type="text" placeholder="00" id="N6">
+    </div>
+    <div class="botao">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <input type="submit" value="GERAR" onclick=gerar()
+        >
+    </div>
+    <script>
+
+        function gerar() {
+
+            var rndm1 = Math.floor(Math.random() * 60);
+            var gera = document.getElementById("N1");
+            gera.value = rndm1;
+
+            var rndm2 = Math.floor(Math.random() * 60);            
+            var gera = document.getElementById("N2");
+            gera.value = rndm2;
+
+            var rndm3 = Math.floor(Math.random() * 60);
+            var gera = document.getElementById("N3");
+            gera.value = rndm3;
+
+            var rndm4 = Math.floor(Math.random() * 60);
+            var gera = document.getElementById("N4");
+            gera.value = rndm4;
+
+            var rndm5 = Math.floor(Math.random() * 60);
+            var gera = document.getElementById("N5");
+            gera.value = rndm5;
+
+            var rndm6 = Math.floor(Math.random() * 60);
+            var gera = document.getElementById("N6");
+            gera.value = rndm6;
+
+        }
+    </script>
+
+</body>
+
+</html>

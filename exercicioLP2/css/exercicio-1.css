@@ -1,0 +1,108 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #101013;
+    font-family: sans-serif;
+}
+.div_exer2{
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 340px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #4a7db6;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.tittle_exer2{
+    top: 0%;
+    font-size: 150%;
+    position: absolute;
+    text-transform: uppercase;
+}
+.img_exer2{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+}
+.div_exer3{
+    position: absolute;
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 340px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #4a7db6;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.img_exer3{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+}
+.div_exer4{
+    position: absolute;
+    top: 50%;
+    left: 62.5%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 340px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #4a7db6;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.img_exer4{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+}
+.div_exer5{
+    position: absolute;
+    top: 50%;
+    left: 87.5%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 340px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #4a7db6;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.img_exer5{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+}
