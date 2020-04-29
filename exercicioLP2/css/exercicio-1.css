@@ -4,6 +4,9 @@ body{
     background-color: #101013;
     font-family: sans-serif;
 }
+a{
+    opacity: 0%;
+}
 .div_exer2{
     position: absolute;
     top: 50%;
@@ -23,6 +26,14 @@ body{
     font-size: 150%;
     position: absolute;
     text-transform: uppercase;
+}
+.text_exer2{
+    top: 11%;
+    left: 15%;
+    right: 15%;
+    font-size: 100%;
+    position: absolute;
+    text-transform: lowercase;
 }
 .img_exer2{
     margin: 0%;
@@ -48,6 +59,20 @@ body{
     color: rgb(255, 255, 255);
     overflow: hidden;
 }
+.tittle_exer3{
+    top: 0%;
+    font-size: 150%;
+    position: absolute;
+    text-transform: uppercase;
+}
+.text_exer3{
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    font-size: 100%;
+    position: absolute;
+    text-transform: lowercase;
+}
 .img_exer3{
     margin: 0%;
     padding: 0%;
@@ -71,6 +96,20 @@ body{
     background-color: #4a7db6;
     color: rgb(255, 255, 255);
     overflow: hidden;
+} 
+.tittle_exer4{
+    top: 0%;
+    font-size: 150%;
+    position: absolute;
+    text-transform: uppercase;
+}
+.text_exer4{
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    font-size: 100%;
+    position: absolute;
+    text-transform: lowercase;
 }
 .img_exer4{
     margin: 0%;
@@ -95,6 +134,20 @@ body{
     background-color: #4a7db6;
     color: rgb(255, 255, 255);
     overflow: hidden;
+} 
+.tittle_exer5{
+    top: 0%;
+    font-size: 150%;
+    position: absolute;
+    text-transform: uppercase;
+}
+.text_exer5{
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    font-size: 100%;
+    position: absolute;
+    text-transform: lowercase;
 }
 .img_exer5{
     margin: 0%;
