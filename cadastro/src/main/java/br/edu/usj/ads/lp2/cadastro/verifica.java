@@ -16,7 +16,7 @@ public class verifica {
             @RequestParam final String email, @RequestParam final String senha) {
         final ModelAndView modelAndView = new ModelAndView("index");
         String resultado;
-        resultado = "nome: " + nome + " idade: " + idade + " email: " + email + " senha: " + senha;
+        resultado = "Nome: " + nome + " Idade: " + idade + " Email: " + email + " Senha: " + senha;
         listaOp.add(resultado);
         final String texto = resultado;
         modelAndView.addObject("mensagem", texto);
