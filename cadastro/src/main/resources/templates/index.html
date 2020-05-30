@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
 </head>
+
 <body>
-    <form action="/verifica" method="post">
-    <input type="text" name="nome" id="nome" placeholder="nome">
-    <input type="number" name="idade" id="idade" placeholder="idade">
-    <input type="email" name="email" id="email" placeholder="email">
-    <input type="password" name="senha" id="senha" placeholder="senha">
-    <input type="submit" value="verifica">
+    <form action="/verifica" method="POST">
+        <input type="text" name="nome" id="nome" placeholder="nome">
+        <input type="number" name="idade" id="idade" placeholder="idade">
+        <input type="email" name="email" id="email" placeholder="email">
+        <input type="password" name="senha" id="senha" placeholder="senha">
+        <input type="submit" value="verifica">
     </form>
-    <ul >
-        <li th:each="resultado : ${historico}" th:text="${resultado}"></li>
+    <ul th:if="${historico}">
+
+        <li th:each="item : ${historico}" th:text="${item.operacaosString}"></li>
+
     </ul>
 </body>
+
 </html>
