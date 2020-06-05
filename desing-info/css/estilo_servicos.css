@@ -1,0 +1,125 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+}
+.div_h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+    top: 0px;
+    left: 0%;
+    position: absolute;
+    text-transform: uppercase;
+    background-color: rgb(37, 37, 37);
+    width:  100%;
+    height: 125px;
+    box-shadow: 0 5px 25px rgba(5, 5, 5, 0.788);
+}
+h1{
+    padding: 0%;
+    margin: 0%;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(255, 140, 58);
+}
+.a_index{
+    padding: 0%;
+    margin: 0%;
+    width: 185px;
+    height: 27px;
+    left: 43.2%;
+    top: 23%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+}
+.p_h1{
+    font-family: sans-serif;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    width:  75%;
+    top: 85px;
+    left: 38%;
+    transform: translate(-30%, 0);
+    position: absolute;
+}
+.div_servicos {
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+    top: 164px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    text-transform: uppercase;
+    background-color: rgb(37, 37, 37);
+    width:  300px;
+    height: 450px;
+    box-shadow: 0 5px 25px rgb(5, 5, 5);
+    overflow: hidden;
+}
+.div_s {
+    padding: 0%;
+    margin: 0%;
+    top: 0px;
+    left: 0%;
+    position: absolute;
+    background-color: rgb(255, 140, 58);
+    width:  300px;
+    height: 80px;
+}
+.p_servicos{
+    font-size: 22px;
+    padding: 0%;
+    margin: 0%;
+    top: 30px;
+    left: 15%;
+    transform: translate(-8% ,0);
+    position: absolute;
+    color: white;
+}
+.div_list{
+    position: absolute;
+    top: 80px;
+    color: white;
+}
+.div_a_r{
+    padding: 0%;
+    margin: 0%;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50% ,0);
+    position: absolute;
+    text-transform: uppercase;
+    width:  260px;
+    height: 50px;
+    background-color: rgb(255, 140, 58);
+}
+.p_redes{
+    padding: 0%;
+    margin: 0%;
+    top: 18px;
+    left: 50%;
+    transform: translate(-50% ,0);
+    position: absolute;
+    color: white;
+}
+.a_redes{
+    padding: 0%;
+    margin: 0%;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50% ,0);
+    position: absolute;
+    width:  260px;
+    height: 50px;
+    background-color: rgba(255, 106, 0, 0);
+}
