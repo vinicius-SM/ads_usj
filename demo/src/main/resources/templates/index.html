@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drink store</title>
+    <link rel="stylesheet" href=".css">
+</head>
+
+<body>
+
+    <div>
+        <h1>drink store</h1>
+        <div th:if="${lista.size() > 0}">
+            <div th:each="drink:${lista}">
+                <div th:text="${drink.nome}"></div>
+            </div>
+        </div>
+        <a href="/cadastrar">cadastrar bebida</a>
+    </div>
+</body>
+
+</html>

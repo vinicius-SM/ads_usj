@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
+
+    <h1>calculadora com historico</h1>
     <form action="/calcula" method="POST">
         <input type="text" name="N1" id="n1">
         <select name="symbol" id="symbol">
@@ -22,7 +25,11 @@
     <div th:text="${mensagem}"></div>
 
     <ul th:if="${historico}">
-        <li th:each="item : ${historico}" th:text="${item.operacao}"></li>
+        <li th:each="item : ${historico}">
+            id: <span th:text="${item.id}"></span>; operação: <span th:text="${item.operacao}"></span>
+            - <a th:href="@{/deleta/{id}(id=${item.id})}">deletar</a>
+            - <a th:href="@{/mostrar/{id}(id=${item.id})}">mostrar</a>
+        </li>
     </ul>
 </body>
 

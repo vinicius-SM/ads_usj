@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora param</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="app">
+        <h1>lista tarefa</h1>
+        <input type="text" id="tarefa" v-model="tarefa">
+        <button class="btn btn-primary" v-on:click="addtarefa()">adicionar</button>
+        <ul>
+            <li v-for="item in lista">{{item}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                tarefa: '',
+                lista: []
+            },methods:{
+                addtarefa: function(){
+                    this.lista.push(this.tarefa);
+                    this.tarefa="";
+                }
+            }});
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>

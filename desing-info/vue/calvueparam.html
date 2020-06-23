@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora param</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="form-group">
+            <label for="numero1">numero 1</label>
+            <input type="text" name="numero1" id="N1" v-model.number="numero1">
+        </div>
+        <select v-model="operacao">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+
+        <div class="form-group">
+            <label for="numero2">numero 2</label>
+            <input type="text" name="numero 2" id="N2" v-model.number="numero2">
+        </div>
+
+        <button class="btn btn-primary" v-on:click.prevent="calcular()">somar</button>
+
+        <div class="form-group">
+            <label for="resultado">resultado</label>
+            <input type="text" name="resultado" id="resultado" v-model="resultado">
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                numero1: 0,
+                numero2: 0,
+                operacao: '',
+                resultado: 0
+            }, methods: {
+                calcular: function () {
+                    switch (this.operacao) {
+                        case '+':
+                            this.resultado = this.numero1 + this.numero2;
+                            break;
+                        case '-':
+                            this.resultado = this.numero1 - this.numero2;
+                            break;
+                        case '/':
+                            this.resultado = this.numero1 / this.numero2;
+                            break;
+                        case '*':
+                            this.resultado = this.numero1 * this.numero2;
+                            break;
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>
